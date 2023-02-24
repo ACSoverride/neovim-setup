@@ -23,7 +23,10 @@ call plug#begin()
 		Plug 'neoclide/coc.nvim', {'branch': 'release'}
 		Plug 'preservim/nerdtree'
 		Plug 'ellisonleao/gruvbox.nvim'
+		Plug 'folke/noice.nvim'
+		Plug 'MunifTanjim/nui.nvim'
 call plug#end()
 
-:set background=light
+lua require("noice").setup()
+
 colorscheme gruvbox
